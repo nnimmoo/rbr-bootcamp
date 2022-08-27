@@ -1,12 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1920px, initial-scale=1.0">
     <title>worker-info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #F6F6F6;
+        }
+
+        .back-button {
+            position: absolute;
+            width: 43px;
+            height: 43px;
+            left: 70px;
+            top: 53px;
+            border-radius: 50%;
+            background: #D9D9D9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-button img {
+            width: 10px;
+        }
+
+        .worker-info-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            border-radius: 18px;
+        }
+
+        .heading {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        .input-form {
+            background-color: #fff;
+            height: 573px;
+            width: 1026px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+        }
+
+        .input-name {
+            display: flex;
+            flex-direction: row;
+        }
+
+
+
+        .worker-info-main img {
+            width: 50px;
+        }
+    </style>
+
 </head>
+
 <body>
-    
+    <div class="back-button">
+        <img src="../assets/vector.png" alt="Go Back">
+    </div>
+    <div class="worker-info-main">
+        <div class="heading">
+            <h5>თანამშრომლის ინფო</h5>
+            <h5>ლეპტოპის მახასიათებლები</h5>
+        </div>
+
+        <div class="input-form">
+            <div class="input-name">
+                <div>
+                    <label for="username">სახელი</label>
+                    <input type="text" id="username">
+                    <label for="username">მინიმუმ 2 სიმბოლო, ქართული ასოები</label>
+                </div>
+
+                <div>
+                    <label for="lastname">გვარი</label>
+                    <input type="text" id="lastname">
+                    <label for="lastname">მინიმუმ 2 სიმბოლო, ქართული ასოები</label>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    პოზიცია
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+
+            <div>
+                <label for="email">მეილი</label>
+                <input type="email" id="email">
+                <label for="email">უნდა მთავრდებოდეს @redberry.ge-ით</label>
+            </div>
+
+            <div>
+                <label for="number">ტელეფონის ნომერი</label>
+                <input type="text" id="number">
+                <label for="number">უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</label>
+            </div>
+
+        </div>
+        <img src="../assets/logo-02.png" alt="logo">
+    </div>
 </body>
+
 </html>
