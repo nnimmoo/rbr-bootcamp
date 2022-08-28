@@ -16,8 +16,8 @@ window.onclick = function (event) {
   }
 }
 
-async function getTeams() {
-  fetch("https://pcfy.redberryinternship.ge/api/teams")
+async function getBrands() {
+  fetch("https://pcfy.redberryinternship.ge/api/brands")
     .then((response) => response.json())
     .then((user) => {
       let ret = user.data;
@@ -27,19 +27,21 @@ async function getTeams() {
         a.id = element.id;
         a.innerText = element.name;
         a.addEventListener('click', function () {
-          let children = document.querySelector(".dropdown-content").children;
           document.getElementsByClassName("dropbtn")[0].textContent = element.name;
         });
-        document.getElementById("drp-team").appendChild(a);
+        document.getElementById("drp-brands").appendChild(a);
       });
     });
     console.log("done");
 }
 
-getTeams();
+getBrands();
 
-async function getPositions() {
-  fetch("https://pcfy.redberryinternship.ge/api/positions")
+
+
+
+async function getCPU() {
+  fetch("https://pcfy.redberryinternship.ge/api/cpus")
     .then((response) => response.json())
     .then((user) => {
       let ret = user.data;
@@ -49,13 +51,34 @@ async function getPositions() {
         a.id = element.id;
         a.innerText = element.name;
         a.addEventListener('click', function () {
-          // let children = document.querySelector(".dropdown-content").children;
-          document.getElementsByClassName("dropbtn")[1].textContent = element.name;
+          document.getElementsByClassName("dropbtn")[0].textContent = element.name;
         });
-        document.getElementById("drp-position").appendChild(a);
+        document.getElementById("drp-cpu").appendChild(a);
       });
     });
     console.log("done");
 }
 
-getPositions();
+getCPU();
+
+
+
+
+async function getBrands() {
+  fetch("https://pcfy.redberryinternship.ge/api/brands")
+    .then((response) => response.json())
+    .then((user) => {
+      let ret = user.data;
+      console.log(ret);
+      ret.forEach(element => {
+        let a = document.createElement("a");
+        a.id = element.id;
+        a.innerText = element.name;
+        a.addEventListener('click', function () {
+          document.getElementsByClassName("dropbtn")[0].textContent = element.name;
+        });
+        document.getElementById("drp-brands").appendChild(a);
+      });
+    });
+    console.log("done");
+}

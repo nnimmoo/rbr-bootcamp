@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <meta name="viewport" content="width=1980, height=1020, initial-scale=1.0">
     <title>worker-info</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -16,12 +16,13 @@
 </head>
 
 <body>
-    <div class="back-button">
+    <div class="back-button" onclick="history.back()">
         <img src="../assets/vector.png" alt="Go Back">
     </div>
     <div class="worker-info-main">
         <div class="heading">
             <h5>თანამშრომლის ინფო</h5>
+            <hr>
             <h5>ლეპტოპის მახასიათებლები</h5>
         </div>
 
@@ -41,23 +42,17 @@
             </div>
 
             <div class="dropdown">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    თიმი
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                </ul>
+                <button onclick="shower('drp-team')" id="team" class="dropbtn">თიმი</button>
+                <div id="drp-team" class="dropdown-content">
+                </div>
             </div>
 
+           
             <div class="dropdown">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    პოზიცია
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                </ul>
+                <button onclick="shower('drp-position')" id="position" class="dropbtn">პოზიცია</button>
+                <div id="drp-position" class="dropdown-content">
+                </div>
             </div>
-
 
             <div>
                 <label for="email">მეილი</label>

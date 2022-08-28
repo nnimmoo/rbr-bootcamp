@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1980, height=1020, initial-scale=1.0">
+    <title>laptop-info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="laptop.css">
+
+</head>
+
+<body>
+    <div class="back-button" onclick="history.back()">
+        <img src="../assets/vector.png" alt="Go Back">
+    </div>
+    <div class="worker-info-main">
+        <div class="heading">
+            <h5>თანამშრომლის ინფო</h5>
+            <h5>ლეპტოპის მახასიათებლები</h5>
+        </div>
+
+        <div class="input-form">
+            <div class="input-image">
+                <input type="file" id="img" name="img" accept="image/*">
+            </div>
+            <div class="input-name">
+                <div>
+                    <h2 for="username">ლეპტოპის სახელი</h2>
+                    <input type="text" id="username" placeholder="HP">
+                    <p>ლათინური ასოები, ციფრები, !@#$%^&*()_+= </p>
+                </div>
+                
+                <div class="dropdown">
+                    <button onclick="shower('drp-brands')" id="team" class="dropbtn">ლეპტოპის ბრენდი</button>
+                    <div id="drp-brands" class="dropdown-content">
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="input-cpu">
+
+                 <div class="dropdown">
+                    <button onclick="shower('drp-cpu')" id="team" class="dropbtn">CPU</button>
+                    <div id="drp-cpu" class="dropdown-content">
+                    </div>
+                </div>
+
+                <div>
+                    <h2 for="username">CPU-ს ბირთვი</h2>
+                    <input type="text" id="username" placeholder="14">
+                    <p>მხოლოდ ციფრები</p>
+                </div>
+                <div>
+                    <h2 for="username">CPU-ს ნაკადი</h2>
+                    <input type="text" id="username" placeholder="365">
+                    <p>მხოლოდ ციფრები</p>
+                </div>
+            </div>
+
+            <div class="input-ram">
+                <div>
+                    <h2 for="username">ლეპტოპის RAM (GB)</h2>
+                    <input type="text" id="username" placeholder="16">
+                    <p>მხოლოდ ციფრები</p>
+                </div>
+
+                <div>
+                <h2>მეხსიერების ტიპი</h2>
+            
+                  <input type="radio" id="css" name="fav_language" value="CSS">
+                <p class="radio-text">SSD</p>  
+                
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <p class="radio-text">HDD</p>  
+                </div>
+            </div>
+            <hr>
+
+
+            <div class="input-name">
+                <div>
+                    <h2 for="username">შეძენის რიცხვი (არჩევითი)</h2>
+                    <input type="text" id="username" placeholder="გრიშა">
+                    <p>მინიმუმ 2 სიმბოლო, ქართული ასოები</p>
+                </div>
+
+                <div>
+                    <h2 for="lastname">ლეპტოპის ფასი</h2>
+                    <input type="text" id="lastname" placeholder="ბაგრატიონი">
+                    <p>მინიმუმ 2 სიმბოლო, ქართული ასოები</p>
+                </div>
+            </div>
+
+            <div class="input-mdgomareoba">
+                <h2>ლეპტოპის მდგომარეობა</h2>
+                
+                  <input type="radio" id="css" name="fav_language" value="CSS">
+                 <p class="radio-text">ახალი</p>
+               
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <p class="radio-text">მეორადი</p>  
+
+            </div>
+            <button class="next-button">შემდეგი</button>
+        </div>
+        <img src="../assets/logo-02.png" alt="logo">
+    </div>
+
+    <script src="../scripts/laptop-script.js"></script>
+</body>
+
+</html>
