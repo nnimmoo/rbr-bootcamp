@@ -8,6 +8,10 @@ body {
     font-family: helvetica;
 }
 
+button:hover, input:hover{
+    cursor: pointer;
+}
+
 .back-button {
     position: absolute;
     width: 53px;
@@ -19,6 +23,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .back-button img {
