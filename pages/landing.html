@@ -1,71 +1,59 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1920px, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing</title>
     <style>
         @font-face {
             font-family: helvetica;
             src: url(../assets/HelveticaNeue.ttc);
         }
-
-        .landing-main {
-            position: absolute;
-            top: 40px;
-            width: 70%;
-            left: 15%;
-            margin: auto;
+        body {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 80px;
-
         }
 
-        .landing-main .logo {
-            width: 90px;
+        .logo {
+            width: 6%;
+            margin-top: 4.3%;
+            margin-bottom: 4.8%;
         }
 
-        .landing-main .decor {
-            width: 581px;
+        .decor {
+            width: 41%;
+            margin-bottom: 6.5%;
         }
 
-        .landing-main div {
-            width: 300px;
-        }
 
-        .landing-main button {
-            /* padding: 18px 60px; */
-            width: 300px;
-            height: 50px;
+        .landing-button {
+            width: 387;
+            height: 60;
             margin: 10px 0px;
-            
             border: none;
             border-radius: 8px;
             background-color: #62A1EB;
             color: #fff;
             font-family: helvetica;
             font-weight: 500;
-            font-size: 16px;
+            font-size: 20px;
             line-height: 24px;
-
+            margin-bottom: 2.5%;
         }
 
         .landing-main button:hover {
             background: #317AD0;
         }
+
     </style>
 </head>
 
 <body>
-    <div class="landing-main">
-        <img src="../assets/logo.png" alt="Company Logo" class="logo">
-        <img src="../assets/landing.png" alt="Landing Image" class="decor">
-        <div>
+    <img src="../assets/logo.png" alt="Company Logo" class="logo">
+    <img src="../assets/landing.png" alt="Landing Image" class="decor">
 
 
-            <a href="worker-info.html"><button>ჩანაწერის დამატება</button></a>
-            <button>ჩანაწერების სია</button>
-        </div>
-    </div>
+    <a href="worker-info.html"><button class="landing-button">ჩანაწერის დამატება</button></a>
+    <a href="laptop-listing.html"> <button class="landing-button">ჩანაწერების სია</button></a>
+
 </body>

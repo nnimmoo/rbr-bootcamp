@@ -1,0 +1,111 @@
+@font-face {
+    font-family: helvetica;
+    src: url(../assets/HelveticaNeue.ttc);
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: helvetica;
+}
+
+
+.back-button {
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    left: 60px;
+    top: 45px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.back-button img {
+    width: 9.21px;
+    height: 16px;
+}
+
+.header {
+    position: absolute;
+    left: 42%;
+    top:6%;
+    width: 312px;
+    height: 21px;
+    font-family: helvetica;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.listing {
+    width: 61%;
+    position: absolute;
+    top: 18%;
+    left: 19%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2%;
+    flex: 0 0 auto;
+}
+
+.laptop-info {
+    min-height: fit-content;
+    height: 11vw;
+    width: 48%;
+    background: #EAFAFF;
+    border: 1px solid #AED1EA;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+
+
+.laptop-info img {
+    margin: 10px;
+    width: 48%;
+    height: 86%;
+}
+
+.laptop-info h1 {
+    font-size: 18px;
+    color: #2E2E2E;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-weight: 600;
+}
+
+
+
+.laptop-info p {
+    color: #2E2E2E;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.laptop-info a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 15px;
+    color: #4386A9;
+}
+
