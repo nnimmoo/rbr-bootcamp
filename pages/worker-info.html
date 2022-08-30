@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
         integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
         crossorigin="anonymous"></script>
-<link rel="stylesheet" href="worker.css">
+    <link rel="stylesheet" href="../style/worker.css">
 
 </head>
 
@@ -19,58 +19,58 @@
     <div class="back-button" onclick="history.back()">
         <img src="../assets/vector.png" alt="Go Back">
     </div>
-    <div class="worker-info-main">
-        <div class="heading">
-            <h5>თანამშრომლის ინფო</h5>
-            <hr>
-            <h5>ლეპტოპის მახასიათებლები</h5>
-        </div>
-
-        <div class="input-form">
-            <div class="input-name">
-                <div>
-                    <label for="username">სახელი</label>
-                    <input type="text" id="username" placeholder="გრიშა">
-                    <p>მინიმუმ 2 სიმბოლო, ქართული ასოები</p>
-                </div>
-
-                <div>
-                    <label for="lastname">გვარი</label>
-                    <input type="text" id="lastname" placeholder="ბაგრატიონი">
-                    <p>მინიმუმ 2 სიმბოლო, ქართული ასოები</p>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button onclick="shower('drp-team')" id="team" class="dropbtn">თიმი</button>
-                <div id="drp-team" class="dropdown-content">
-                </div>
-            </div>
-
-           
-            <div class="dropdown">
-                <button onclick="shower('drp-position')" id="position" class="dropbtn">პოზიცია</button>
-                <div id="drp-position" class="dropdown-content">
-                </div>
-            </div>
-
-            <div>
-                <label for="email">მეილი</label>
-                <input type="email" id="email" placeholder="grish666@redberry.ge">
-                <p>უნდა მთავრდებოდეს @redberry.ge-ით</p>
-            </div>
-
-            <div>
-                <label for="number">ტელეფონის ნომერი</label>
-                <input type="text" id="number" placeholder="+995 598 00 07 01">
-                <p>უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</p>
-            </div>
-
-            <button class="next-button" onclick="validation()">შემდეგი</button>
-            <p id="test"></p>
-        </div>
-        <img src="../assets/logo-02.png" alt="logo">
+    <div class="header">
+        <p>თანამშრომლის ინფო</p>
+        <p>ლეპტოპის მახასიათებლები</p>
     </div>
+
+
+    <div class="input-form">
+        <div class="inputs">
+        <div class="input-name">
+            <div class="name" id="1">
+                <label for="username">სახელი</label>
+                <input type="text" id="username" placeholder="გრიშა">
+                <p>მინიმუმ 2 სიმბოლო, ქართული ასოები</p>
+            </div>
+
+            <div>
+                <label for="lastname">გვარი</label>
+                <input type="text" id="lastname" placeholder="ბაგრატიონი">
+                <p>მინიმუმ 2 სიმბოლო, ქართული ასოები</p>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button onclick="shower('drp-team')" id="team" class="dropbtn">თიმი</button>
+            <div id="drp-team" class="dropdown-content">
+            </div>
+        </div>
+
+
+        <div class="dropdown">
+            <button onclick="shower('drp-position')" id="position" class="dropbtn">პოზიცია</button>
+            <div id="drp-position" class="dropdown-content">
+            </div>
+        </div>
+
+        <div>
+            <label for="email">მეილი</label>
+            <input type="email" id="email" placeholder="grish666@redberry.ge">
+            <p>უნდა მთავრდებოდეს @redberry.ge-ით</p>
+        </div>
+
+        <div>
+            <label for="number">ტელეფონის ნომერი</label>
+            <input type="text" id="number" placeholder="+995 598 00 07 01">
+            <p>უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</p>
+        </div>
+      </div>
+       <a href="laptop-info.html"><button class="next-button">შემდეგი</button></a> 
+    </div>
+
+    <img class= "logo" src="../assets/logo-02.png" alt="logo">
+
 
     <script src="../scripts/worker-script.js"></script>
 </body>
